@@ -1,7 +1,7 @@
 # SteinGAN
 This repository contains the code for the paper Learning to Draw Samples: With Application to Amortized MLE for Generative Adversarial Learning.
 
-The code is based on (Alec Radford, Luke Metz, Soumith Chintala)'s excellent implementation of DCGAN (https://github.com/Newmu/dcgan_code).
+The code is based on the excellent implementation of DCGAN (https://github.com/Newmu/dcgan_code).
 
 ## MNIST
 
