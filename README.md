@@ -15,3 +15,9 @@ The code is based on the excellent implementation of DCGAN (https://github.com/N
 <img src="images/celeba.png" width="50%">
 
 <img src="images/random_walk.png" width="50%">
+
+## Feedback
+Feedback is greatly appreciated. If you have any questions, comments, issues or anything else really, [shoot me an email](mailto:dilin.wang.gr@dartmouth.edu).
+
+All rights reserved.
+
