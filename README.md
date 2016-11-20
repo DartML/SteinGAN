@@ -1,5 +1,6 @@
 # SteinGAN
-This repository contains the code for the paper [Learning to Draw Samples: With Application to Amortized MLE for Generative Adversarial Learning](https://arxiv.org/pdf/1611.01722.pdf).
+This repository contains the code for SteinGAN,
+Dilin Wang, Qiang Liu. [Learning to Draw Samples: With Application to Amortized MLE for Generative Adversarial Learning](https://arxiv.org/pdf/1611.01722.pdf), 2016.
 
 The code is based on the excellent implementation of [DCGAN](https://github.com/Newmu/dcgan_code).
 
