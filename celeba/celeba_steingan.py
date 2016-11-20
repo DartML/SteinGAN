@@ -210,7 +210,7 @@ def vgd_gradient(X0, X1):
     grad = -1.0 * T.grad(T.mean(mse), X0)
 
     vgd_grad = ( (T.dot(kxy, T.flatten(grad, 2))).reshape(dxkxy.shape) + dxkxy) /  T.sum(kxy, axis=1).reshape((kxy.shape[0],1,1,1))
-    return grad, vgd_grad 
+    return vgd_grad 
 
 
 gX = gen(Z, *gen_params)
@@ -256,8 +256,8 @@ for epoch in range(1, niter+1):
             # generate samples
             samples = _gen(zmb)
 
+            vgd_grad = _vgd_gradient(samples, samples)
             if n_updates % (k+1) == 0:
-                grad, vgd_grad = _vgd_gradient(samples, samples)
                 _train_g(zmb, floatX(vgd_grad)) 
             else:
                 _train_d(imb, samples)
