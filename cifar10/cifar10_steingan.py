@@ -248,13 +248,10 @@ g_updater = updates.Adam(lr=g_lrt, b1=b1, regularizer=updates.Regularizer(l2=l2)
 d_updates = d_updater(discrim_params, d_cost)
 g_updates = g_updater(gen_params, g_cost)
 
-
-all_cost = [d_cost, cost_data, cost_vgd, T.mean(mse_data), T.mean(mse_vgd), T.mean(err_data), T.mean(err_vgd)]
-
 print 'COMPILING'
 t = time()
 _gen = theano.function([Z, Y], gX)
-_train_d = theano.function([X, X0, Y], all_cost, updates=d_updates)
+_train_d = theano.function([X, X0, Y], d_cost, updates=d_updates)
 _train_g = theano.function([Z, Y, deltaX], g_cost, updates=g_updates)
 _vgd_gradient = theano.function([X0, X1, Y], vgd_gradient(X0, X1, Y))
 _reconstruction_cost = theano.function([X], T.mean(mse_data))
