@@ -204,7 +204,7 @@ def vgd_gradient(X0, X1):
     # gradient wrt input X0
     h0, _, mse = discrim(X0)
 
-    cost = T.mean(T.sum(T.mul(dxkxy, h0), axis=1))
+    cost = T.mean(T.sum(T.dot(dxkxy, h0.T), axis=1))
     dxkxy = T.grad(cost, X0)
 
     grad = -1.0 * T.grad(T.mean(mse), X0)
