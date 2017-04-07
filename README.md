@@ -15,6 +15,7 @@ images in SteinGAN.
 
 SteinGAN | SteinGAN without kernel
 -------- | --------------------
+<img src="images/rbm_adv.png" width="50%"> | <img src="images/rbm_adv_no_kernel.png" width="50%">
 
 
 ## CIFAR-10
