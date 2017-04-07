@@ -8,12 +8,13 @@ We evaluate our methods on MNIST and
 use a simple Gaussian-Bernoulli Restricted Boltzmann Machines
 (RBM) as our energy-based model, which allows
 us to accurately evaluate the test likelihood.
-
 SteinGAN without the kernel
 tends to produce much less diverse images. This suggests
 that the repulsive term is responsible for generating diverse
 images in SteinGAN.
 
+SteinGAN | SteinGAN without kernel
+-------- | --------------------
 
 
 ## CIFAR-10
