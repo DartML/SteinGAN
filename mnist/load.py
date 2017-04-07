@@ -12,6 +12,11 @@ import theano
 from lib.data_utils import shuffle
 from lib.config import data_dir
 
+import numpy as np
+import scipy.io as sio
+import theano
+ 
+  
 
 def mnist():
     fd = open(os.path.join(data_dir, 'train-images-idx3-ubyte'))
@@ -45,3 +50,4 @@ def mnist_with_valid_set():
     trY = trY[:50000]
 
     return trX, vaX, teX, trY, vaY, teY
+
