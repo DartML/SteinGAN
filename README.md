@@ -13,7 +13,11 @@ tends to produce much less diverse images. This suggests
 that the repulsive term is responsible for generating diverse
 images in SteinGAN.
 
+We use the implementation of [Wu et al., 2017](https://github.com/tonywu95/eval_gen) to evaluate the test log-likelihood.
+
 SteinGAN | SteinGAN without kernel
+-------- | --------------------
+TestLL: -771.2 | Test LL: -989.6 
 -------- | --------------------
 <img src="images/rbm_adv.png" width="100%"> | <img src="images/rbm_adv_no_kernel.png" width="100%">
 
