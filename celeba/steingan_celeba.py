@@ -182,7 +182,7 @@ def rbf_kernel(X0):
 def svgd_gradient(X0):
 
     hidden, _, mse = discrim(X0)
-    grad = -1.0 * T.grad( mse.mean(), X0)
+    grad = -1.0 * T.grad( mse.sum(), X0)
 
     kxy, neighbors, h = rbf_kernel(hidden)  #TODO
 
