@@ -226,7 +226,7 @@ def gradient(X0, Y):
 def svgd_gradient(X0, Y):
 
     hidden, _, _, mse, neg_lik = discrim(X0, Y)
-    grad = -1.0 * T.grad( combine_err(mse, neg_lik).mean(), X0)
+    grad = -1.0 * T.grad( combine_err(mse, neg_lik).sum(), X0)
 
     kxy, neighbors, h = rbf_kernel(hidden)  #TODO
 
