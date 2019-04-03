@@ -1,3 +1,5 @@
+Please email [Dilin Wang](mailto:dilin@cs.utexas.edu) for the updated implementation.
+
 # SteinGAN
 This repository contains the code for the paper [Learning to Draw Samples: With Application to Amortized MLE for Generative Adversarial Learning](https://arxiv.org/pdf/1611.01722.pdf).
 
